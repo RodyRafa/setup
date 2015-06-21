@@ -1,3 +1,3 @@
 ## Usage
 
-* Clone the repository in your '~/', thats it! <o/ 
+* Clone the repository in your `~/`, thats it! <o/ 
