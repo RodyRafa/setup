@@ -1,11 +1,17 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " initial settings (specific for vundle)
-set nocompatible
-filetype off
+"set nocompatible
+"filetype off
 
 " set vundle as plugin manager
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
+Plugin 'gmarik/vundle'
 filetype plugin indent on
 
 
@@ -14,19 +20,19 @@ filetype plugin indent on
 " =======================================
 
 " Emmet vim
-Bundle "mattn/emmet-vim"
+Plugin 'mattn/emmet-vim'
 
 " Editor config
-Bundle 'editorconfig/editorconfig-vim'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Ctrl p
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
 " =======================================
 " Themes
 " =======================================
-Bundle 'baskerville/bubblegum'
-Bundle 'nanotech/jellybeans.vim'
+Plugin 'baskerville/bubblegum'
+Plugin 'nanotech/jellybeans.vim'
 
 "Tabulação 
 syntax enable               " habilita a syntax
@@ -43,5 +49,5 @@ set wildmenu                " mostra o autocomplete para os commandos do menu
 set showmatch               " mostra em highliht {[(
 
 "Cor do tema
-colorscheme jellybeans
 let g:jellybeans_use_lowcolor_black = 0
+colorscheme jellybeans
