@@ -38,6 +38,7 @@ Plugin 'nanotech/jellybeans.vim'
 syntax enable               " habilita a syntax
 set tabstop=2               " quantidade de espaco que vai conter meu tab modo visual
 set softtabstop=2           " quantidade de espaco que vai conter meu tab modo edição
+set shiftwidth=2
 set expandtab               " converte todos os tab em espacos
 set background=dark
 
