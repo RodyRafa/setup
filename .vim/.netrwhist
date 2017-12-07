@@ -1,10 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Jobs/doasesangue/site/layout/scss'
-let g:netrw_dirhist_2='/Jobs/doasesangue/site/layout/scss/pages'
-let g:netrw_dirhist_3='/Jobs/doasesangue/site/layout/scss'
-let g:netrw_dirhist_4='/Jobs/doasesangue/site/layout/scss/base'
-let g:netrw_dirhist_5='/Jobs/doasesangue/site/layout/scss'
-let g:netrw_dirhist_6='/Jobs/doasesangue/site/layout/scss/layout'
-let g:netrw_dirhist_7='/Jobs/doasesangue'
-let g:netrw_dirhist_8='/Jobs/doasesangue/site'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/rafaelrodrigues/Jobs/freedom-webstore/_refactoring/_store/nba'
+let g:netrw_dirhist_2='/Users/rafaelrodrigues/Jobs/freedom-webstore/_refactoring/_store'
