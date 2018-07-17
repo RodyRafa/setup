@@ -1,46 +1,48 @@
 " initial settings (specific for vundle)
 set nocompatible
 filetype off
-
-" set vundle as plugin manager
-set rtp+=~/.vim/bundle/vundle/
 set paste
-call vundle#rc()
-Bundle 'gmarik/vundle'
-filetype plugin indent on
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'gmarik/vundle'
 
 " =======================================
 " Plugins
 " =======================================
 
 " Emmet vim
-Bundle "mattn/emmet-vim"
+Plugin 'mattn/emmet-vim'
 
 " Editor config
-Bundle 'editorconfig/editorconfig-vim'
-
-" Ctrl p
-Bundle 'kien/ctrlp.vim'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Syntax of React"
-Bundle 'isRuslan/vim-es6'
-Bundle 'mxw/vim-jsx'
-Bundle 'pangloss/vim-javascript'
+Plugin 'isRuslan/vim-es6'
+Plugin 'mxw/vim-jsx'
+Plugin 'pangloss/vim-javascript'
+
+" Syntax of AngularJs
+Plugin 'leafgarland/typescript-vim'
 
 " =======================================
 " Themes
 " =======================================
-Bundle 'baskerville/bubblegum'
-Bundle 'nanotech/jellybeans.vim'
-
+Plugin 'baskerville/bubblegum'
+Plugin 'nanotech/jellybeans.vim'
+call vundle#end()
+filetype plugin indent on
 "Tabulação 
 syntax enable               " habilita a syntax
 set tabstop=2               " quantidade de espaco que vai conter meu tab modo visual
-set softtabstop=2           " quantidade de espaco que vai conter meu tab modo edição
-set shiftwidth=2            " quantidade de espaco que na identação utilizando ">" "<"
-set expandtab               " converte todos os tab em espacos
 set background=dark
+" quantidade de espaco que vai conter meu tab modo edição
+" quantidade de espaco que na identação utilizando ">" "<"
+" converte todos os tab em espacos
+set softtabstop=2 shiftwidth=2 expandtab
 
 "Configuração UI
 set number                  " vai mostrar a linha
@@ -58,6 +60,4 @@ let g:jellybeans_use_lowcolor_black = 0
 " Ativa jsx
 let g:jsx_ext_required = 0
 
-" Velocity
-au BufNewFile,BufRead *.vm,*.html,*.htm,*.shtml,*.stm set ft=velocity
-
+let g:typescript_indent_disable = 1
